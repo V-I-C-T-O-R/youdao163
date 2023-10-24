@@ -5,14 +5,12 @@ on:
     - cron: '10 8 * * *'
 jobs:
   build:
-
-    if: github.actor == github.repository_owner
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@main
     - name: Run
-      uses: coactions/setup-xvfb@main
+      uses: actions/checkout@main
       with:
         run: dotnet run
       env: 

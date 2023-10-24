@@ -17,4 +17,4 @@ jobs:
       with:
         run: dotnet run
       env: 
-        CONF: ${{ secrets.CONF }}
+        CONF: ${{ YOUDAOYUN.CONF }}

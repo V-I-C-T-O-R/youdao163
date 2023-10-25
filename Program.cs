@@ -135,6 +135,7 @@ async Task<string> GetCookie(User user)
             await Task.Delay(delayMs);
             totalDelayMs += delayMs;
         }
+        Console.WriteLine($"page.Url值{page.Url}");
 
         if (isLogin)
         {

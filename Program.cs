@@ -157,7 +157,7 @@ async Task<string> GetCookie(User user)
     {
         await browser.DisposeAsync();
     }
-
+    Console.WriteLine($"cookie值{cookie}");
     return cookie;
 }
 

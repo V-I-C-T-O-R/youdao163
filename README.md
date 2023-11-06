@@ -27,7 +27,7 @@
     	"RdsPwd": "ppp" //redis密码，选填
     }
     ```
-    - `RdsServer`和`RdsPwd`是选填的，用于配置redis，来存储cookie。后续可以重用这个cookie，避免频繁登录账号。建议配置一下，可以使用[redislabs](https://app.redislabs.com/)的免费套餐。
+    - `RdsServer`和`RdsPwd`是选填的，用于配置redis，来存储cookie。后续可以重用这个cookie，避免频繁登录账号。建议配置一下，可以使用[redislabs](https://app.redislabs.com/)的免费套餐。（如果无法通过自动解析滑块验证码获取到cookie，可手动在web端复制登陆后的cookie值来 更新到redis的键值中，键的命名格式：Note163_{user.Username}）
     - `JsUrl`和`LoginStr`这2个字段是用来登录账号的，已经设置好了默认值，**不建议**修改，所以上面的配置中没有列出来。详细请查看源码。
 
 **步骤图示如下：**
